@@ -1,0 +1,1 @@
+$this->attributes['[% field_name %]'] = !empty($value) ? Carbon::parse($value)->isoFormat('[% date_format %]') : null;

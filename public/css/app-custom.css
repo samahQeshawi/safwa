@@ -1,0 +1,35 @@
+.layout-footer-fixed .wrapper .footer-absolute {
+    position: absolute;
+    padding-bottom: 0;
+}
+
+#map-canvas {
+	height: 400px;
+	width: 100%;
+}
+
+.select2-container .select2-selection--single {
+	height:38px;
+}
+
+:root {
+	--star-size: 40px;
+	--star-color: #fff;
+	--star-background: #fc0;
+}
+
+.stars {
+	--percent: calc(var(--rating) / 5 * 100%);
+	display: inline-block;
+	font-size: var(--star-size);
+	font-family: Times;
+	line-height: 1;
+}
+
+.stars::before {
+	content: '★★★★★';
+	letter-spacing: 3px;
+	background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

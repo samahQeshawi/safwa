@@ -1,0 +1,170 @@
+html 
+{
+  scroll-behavior: smooth;
+}
+@font-face 
+{
+  font-family: Raleway-Regular;
+  src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face 
+{
+  font-family: Almarai-Regular;
+  src: url(../fonts/Almarai-Regular.ttf);
+}
+@font-face 
+{
+  font-family: Almarai-Bold;
+  src: url(../fonts/Almarai-Bold.ttf);
+}
+.font-for-number
+{
+	font-family: 'Poppins', sans-serif!important;
+}
+.en-text-font
+{
+  font-family: Raleway-Regular!important;
+}
+.direction-ltr
+{
+  direction: ltr;
+}
+
+/* Common Code Starts */
+
+body
+{
+  margin:0 auto;
+  font-size: 14px;
+  color: #353535!important;
+  font-family: Almarai-Regular!important;
+  line-height: 32px;
+  transition: 0.5s ease all;
+  direction: rtl;
+  text-align: right;
+}
+
+.direction-rtl
+{
+  direction: rtl;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  font-family: Almarai-Bold!important;
+  line-height: 1.5;
+}
+p
+{
+  font-family: Almarai-Regular!important;
+}
+
+/* Common Code Ends */
+
+
+
+/******************* Site Header Code Starts **********/
+
+.nav-link
+{
+  font-family: Almarai-Regular!important;
+  text-transform: uppercase;
+}
+
+/******************* Site Header Code Ends **********/
+
+
+/******************* Site Banner Code Starts ********/
+
+.site-banner-wrapper
+{
+  letter-spacing: 0.5px;
+}
+.banner-content h5
+{
+  font-family: Almarai-Regular!important;
+}
+.banner-content 
+{
+    margin-top: 120px;
+    margin-right: 100px;
+    color: #fff;
+}
+.immersive_slider .is-slide .content
+{
+  padding-left: 50px;
+}
+/******************* Site Banner Code Ends ********/
+
+
+/****************** Block-01-Left Code Starts ********/
+
+
+.left-header
+{
+  text-align: left;
+}
+.left-content h6
+{
+  font-family: Almarai-Regular!important;
+}
+
+/****************** Block-01-Left Code Ends ********/
+
+
+/****************** Block-02 Code Starts ********/
+
+.block-02-inner-wrapper h4, .block-04-inner-wrapper h4
+{
+  letter-spacing: 0.5px;
+}
+.block-02-inner-wrapper h6
+{
+  font-family: Almarai-Regular!important;
+}
+
+/****************** Block-02 Code Ends ********/
+
+
+/****************** Block-03 Code Starts ********/
+
+.block-03-left .left-content h5 
+{
+  font-family: Almarai-Regular!important;
+}
+
+/****************** Block-03 Code Ends ********/
+
+
+.about-us-ul
+{
+  padding-right: 0px;
+}
+
+
+.custom-img-pos
+{
+  left: 0;
+  right: inherit;
+}
+.pull-right {
+  float: left;
+}
+/****************** Footer Code Starts *******/
+
+.custom-fa-icon 
+{
+  margin-left: 20px!important;
+  margin-right: 0px!important;
+}
+.social-block a:hover
+{
+  text-decoration: none!important;
+}
+
+/****************** Footer Code Ends *******/
+
+@media screen and (max-width: 768px)
+{ 
+  
+}

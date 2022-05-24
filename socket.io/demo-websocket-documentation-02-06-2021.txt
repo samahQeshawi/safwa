@@ -1,0 +1,103 @@
+Using websocket io in real-time for chating demo:
+-------------------------------------------------
+1) Server Listen on port:
+http://217.147.1.193:2775
+
+2) list online users with api -you can get it from postman api collection-:
+{{base_url}}/api/list_online_users
+
+////////////////////////////////////////////////////////// socket join
+3) Send socket_token to connect user to server with method:
+socket.emit('join', socket_token)
+
+listner to join emit :
+socket.on('join',function (response){})
+where response will be like :
+    {
+        status:true,
+        code : 0,
+        text: "The Socket Joined successfuly"
+    }
+///////////////////////////////////////////////////////////// Chatting
+4) Send message on real-time  with method:
+socket.emit('chat',  {to:to,trip_id:trip_id,msg:msg})
+## to = user_id you can get it from response of step (2) from users table
+
+Receiving messages on real-time with method:
+    socket.on('chat',function (object){
+        log.console(object.msg+ " from user_id:"+object.from);
+    });
+    where object like :
+    {
+        from:1,
+        msg:'hi how are you ?'
+    }
+///////////////////////////////////////////////////////////// Join Tracking
+5) To Send tracking firstly you should join to current trip with method join_trip and you should be already joined "authenticated socket" in step 3:
+socket.emit('join_trip', {trip_id,socket_token})
+
+listner to join_trip emit by :
+socket.on('join_trip',function (response){})
+where response will be like:
+    {
+        status:true,
+        code : 0,
+        text: "The Socket Joined to Tracking"
+    }
+
+///////////////////////////////////////////////////////////// send Tracking Trip
+
+6) To Send tracking you should be already joined "authenticated socket" in step 3 & step 5:
+socket.emit('send_trip_track', {trip_id,lat,lng})
+
+listner to receive_trip_track emit errors only by :
+socket.on('receive_trip_track',function (response){})
+
+where response will be like
+    {
+        status:false,
+        code : 4,
+        text: "The Socket has not authenticate for tracking this trip"
+    }
+///////////////////////////////////////////////////////////// Send Routing Trip
+
+7) To Send Routing you should be already joined "authenticated socket" in step 3 & step 5:
+socket.emit('trip_route', {trip_id,lat,lng})
+
+you can listner to trip_track emit errors only by :
+socket.on('trip_route',function (response){})
+where response will be like
+    {
+        status:false,
+        code : 4,
+        text: "The Socket has not authenticate for tracking this trip"
+    }
+///////////////////////////////////////////////////////////// Leave Trip tracking
+7) To leave tracking use:
+socket.emit('leave_trip', trip_id)
+
+you can listner to trip_track emit errors only by :
+socket.on('leave_trip',function (response){})
+where response will be like
+    {
+        status:true,
+        code : 0,
+        text: "The Socket Leaved Tracking"
+    }
+
+Note::::
+You Can Test Websocket chat demo on web page with multiple devices, and you can find javascript source code within same page link:
+
+8) To Send driver tracking you should be already joined "authenticated socket" in step 3:
+socket.emit('driver_track', {lat,lng})
+
+listner to driver_track emit errors only by :
+socket.on('driver_track',function (response){})
+where response will be like
+    {
+        status: false,
+        code : 2,
+        text: "The Socket Not Authenticated"
+    }
+
+http://217.147.1.193:8006/real-time-messaging/{{ socket_token }}

@@ -1,0 +1,105 @@
+/*************************************
+
+Primary Text Color :#353535;
+Secondary Text Color :#797979;
+
+
+***************************************/
+html 
+{
+  scroll-behavior: smooth;
+}
+@font-face 
+{
+  font-family: Raleway-Regular;
+  src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face 
+{
+  font-family: Raleway-Bold;
+  src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face 
+{
+  font-family: Raleway-Medium;
+  src: url(../fonts/Raleway-Medium.ttf);
+}
+@font-face 
+{
+  font-family: Raleway-SemiBold;
+  src: url(../fonts/Raleway-SemiBold.ttf);
+}
+.font-for-number
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+/* Common Code Starts */
+
+body
+{
+	margin:0 auto;
+	font-size: 14px;
+	color: #353535!important;
+	font-family: Raleway-Regular!important;
+	font-feature-settings: 'pnum' on, 'lnum' on!important;
+	line-height: 32px;
+    transition: 0.5s ease all;
+    background-image: url("../images/login-bg.png");
+    background-size: contain;
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+.form-control
+{
+    text-indent: 0px;
+    border: none;
+    outline: none;
+    box-shadow: none!important;
+    background: none!important;
+}
+.login-wrapper .form-check-input 
+{
+    left: 20px;
+}
+.border-bottom {
+    border-color: #7B7B7B7D !important;
+}
+.login-wrapper
+{   
+    height: 100%; 
+    padding-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+.login-site-logo 
+{
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.login-form-wrapper
+{
+    background: #FFFFFFB3;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    padding: 30px;
+
+}
+.login-wrapper label 
+{
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+
+/*************************** Responsive Code Starts ********************/
+
+@media screen and (max-width: 768px)
+{ 
+    body
+    {
+        background-size: cover;
+    }
+}

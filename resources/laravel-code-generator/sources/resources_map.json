@@ -1,0 +1,57 @@
+[
+    {
+        "model-name": "User",
+        "resource-file": "users.json",
+        "table-name": "users"
+    },
+    {
+        "model-name": "Company",
+        "resource-file": "companies.json",
+        "table-name": "companies"
+    },
+    {
+        "model-name": "Store",
+        "resource-file": "stores.json"
+    },
+    {
+        "model-name": "Categories",
+        "resource-file": "categories.json"
+    },
+    {
+        "model-name": "Category",
+        "resource-file": "categories.json"
+    },
+    {
+        "model-name": "Country",
+        "resource-file": "countries.json"
+    },
+    {
+        "model-name": "City",
+        "resource-file": "cities.json"
+    },
+    {
+        "model-name": "Driver",
+        "resource-file": "drivers.json",
+        "table-name": "drivers"
+    },
+    {
+        "model-name": "Transaction",
+        "resource-file": "transactions.json",
+        "table-name": "transactions"
+    },
+    {
+        "model-name": "Service",
+        "resource-file": "services.json",
+        "table-name": "services"
+    },
+    {
+        "model-name": "FuelType",
+        "resource-file": "fuel_types.json",
+        "table-name": "fuel_types"
+    },
+    {
+        "model-name": "CarPhoto",
+        "resource-file": "car_photos.json",
+        "table-name": "car_photos"
+    }
+]

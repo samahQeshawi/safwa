@@ -1,0 +1,759 @@
+/*************************************
+
+Primary Text Color :#353535;
+Secondary Text Color :#797979;
+
+
+***************************************/
+html 
+{
+  scroll-behavior: smooth;
+}
+@font-face 
+{
+  font-family: Raleway-Regular;
+  src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face 
+{
+  font-family: Raleway-Bold;
+  src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face 
+{
+  font-family: Raleway-Medium;
+  src: url(../fonts/Raleway-Medium.ttf);
+}
+@font-face 
+{
+  font-family: Raleway-SemiBold;
+  src: url(../fonts/Raleway-SemiBold.ttf);
+}
+.font-for-number
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+/* Common Code Starts */
+
+body
+{
+	margin:0 auto;
+	font-size: 14px;
+	color: #353535!important;
+	font-family: Raleway-Regular!important;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	line-height: 32px;
+	transition: 0.5s ease all;
+}
+a
+{
+	outline: none!important;
+	text-decoration: none!important;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	font-family: Raleway-SemiBold;
+	font-variant: all-small-caps!important;
+
+}
+p
+{
+	font-family: Raleway-Regular;
+}
+.no-margin
+{
+	margin:0px;
+}
+.no-padding
+{
+	padding: 0px;
+}
+.btn:focus 
+{
+    outline: 0;
+    box-shadow: none!important;
+}
+.white-text
+{
+	color: #fff!important;
+}
+.text-orange 
+{
+    color: #ff9b00;
+}
+.pull-right
+{
+	float:right;
+}
+
+/* Common Code Ends */
+
+/*** Hide Menu *****/
+
+.site-header-wrapper .nav-item:nth-child(4),.site-header-wrapper .nav-item:nth-child(7)
+{
+   display:none;
+}
+
+/*** Hide Menu *****/
+
+
+/******************* Site Header Code Starts **********/
+
+.site-header-wrapper {
+    position: relative;
+    z-index: 1;
+}
+.site-logo
+{
+	width: 120px;
+}
+.navbar
+{
+	padding: 0rem 0rem;
+}
+.navbar-light .navbar-nav .nav-link
+{
+	letter-spacing: 0px;
+	padding-top: .2rem;
+	padding-bottom: .2rem;
+	font-size: 12px;
+	color: #494949;
+	transition: 0.5s ease all;
+	text-align: center;
+}
+.navbar-light .navbar-nav li
+{
+	padding-right: 1rem;
+	padding-left: 1rem;
+	display: table-cell; 
+	position: relative;
+	
+}
+.nav-link i 
+{
+    padding-left: 5px;
+    padding-right: 8px;
+    font-size: 22px;
+
+}
+.login-btn:hover 
+{
+    background: #ffbe2e;
+    color:#000!important;
+}
+.navbar-nav li span {
+    display: block;
+    color: #333;
+}
+.nav-link
+{
+	font-family: Raleway-Medium;
+	text-transform: uppercase;
+}
+.nav-link 
+{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.nav-link:after 
+{    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(241, 142, 35);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav-link:hover:after 
+{ 
+  width: 100%; 
+  left: 0; 
+}
+
+.login-btn 
+{
+    background: #000;
+    color: #fff !important;
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+    font-weight: bolder;
+}
+.language-link 
+{
+    border: 1px solid #797979;
+    font-family: Raleway-SemiBold;
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+    padding-top: .2rem;
+	padding-bottom: .2rem;
+}
+
+/******************* Site Header Code Ends **********/
+
+
+
+
+/******************* Site Banner Code Starts ********/
+
+.site-banner-wrapper
+{
+	width: 100%;
+	height: 480px;
+	overflow: hidden;
+	text-transform: uppercase;
+	color: #000;
+	background: url('../images/banner-bg.jpg') no-repeat;
+	background-size: cover;
+	letter-spacing: 2px;
+	border-top: 1px solid #f2f2f2;
+	-webkit-box-shadow: 0px 4px 8px 0px rgba(200, 200, 200, 0.24);
+	-moz-box-shadow: 0px 4px 8px 0px rgba(200, 200, 200, 0.24);
+	box-shadow: 0px 4px 8px 0px rgba(200, 200, 200, 0.24);
+}
+.site-banner-wrapper .row
+{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.banner-content
+{
+	margin-top: 120px;
+	margin-left: 100px;
+	color: #fff;
+}
+.banner-content h2
+{
+	line-height: 50px;
+	font-weight: bold;
+}
+.banner-btn 
+{
+    background: #000;
+    color: #fff;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 0px;
+    padding-top: 8px;
+	padding-bottom: 8px;
+	border: 2px solid black;
+	font-variant: all-small-caps !important;
+}
+.banner-btn:hover {
+    color: #000;
+    text-decoration: none;
+    border: 2px solid black;
+    background: none;
+}
+.book-form-title 
+{
+    background: #FFBE2E;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 0px;
+}
+.book-form 
+{
+    background: #fff;
+    padding: 5px 20px;
+}
+.book-form .form-group 
+{
+	margin-bottom: 1.5em;
+}
+.book-form .form-control 
+{
+	height: calc(1em + .75rem + 2px);
+    padding-left: 0px;
+    font-size: 1em;
+    font-variant: lining-nums;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0px;
+}
+.book-form .form-control:focus 
+{
+    border-color: #808080 !important;
+    box-shadow: none;
+}
+.book-form label
+{
+	letter-spacing: 0px;
+	font-size: 12px;
+	margin-bottom: 0px;
+}
+
+/******************* Site Banner Code Ends **********/
+
+
+
+/****************** Block-02 Code Starts ********/
+
+.site-block-02-wrapper 
+{
+    margin: 30px 0px 0px 0px;
+}
+.block-02-inner-wrapper 
+{
+    margin-top: 60px;
+}
+.white-title
+{
+	color: #FFf;
+}
+.yellow-title
+{
+	color: #FFBE2E;
+	text-transform: uppercase;
+	font-family: Raleway-Bold;
+}
+.black-title
+{
+	color: #000;
+	font-family: Raleway-Bold;
+	text-transform: uppercase;
+}
+.our-service-left 
+{
+    background: #ddd;
+    min-height: 300px;
+    padding: 50px;
+}
+.our-service-right 
+{
+    background: #000;
+    min-height: 300px;
+    padding: 50px;
+    position: absolute;
+    width: 100%;
+    left: -80px;
+    top: 70px;
+}
+.services-icon 
+{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: black;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+.block-02-inner-wrapper h4,.block-04-inner-wrapper h4
+{
+	letter-spacing: 3px;
+	text-transform: capitalize;
+}
+.block-02-inner-wrapper h6
+{
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	font-family: Raleway-regular;
+	font-size: 15px;
+	margin: 25px 0px;
+}
+.custom-column 
+{
+    border-right: 1px dashed #919191;
+}
+.custom-column:last-child
+{
+	border-right:none;
+}
+.custom-column h6
+{
+	letter-spacing: 1px;
+	color:#000;
+}
+.s-icon
+{
+	margin-top: 10px;
+}
+.custom-icon
+{
+	font-size: 36px;
+	font-weight: normal;
+	margin: 15px 0px;
+	color:#797979;
+}
+#immersive_slider a:hover
+{
+	color: #FFBE2E;
+}
+
+/****************** Block-02 Code Ends ********/
+
+
+/****************** Block-04 Code Starts  ********/
+
+.site-block-04-wrapper
+{	
+	margin-top: 80px;
+	margin-bottom: 50px;
+}
+.block-04-inner-wrapper
+{	
+	background: #EAEAEA;
+	margin-top: 80px;
+}
+.about-us-ul
+{
+	padding-left: 0px;
+	list-style-type: none;
+	margin-top: 50px;
+}
+.about-us-ul li
+{
+	margin-bottom: 30px;
+}
+.block-04-inner-wrapper .custom-position 
+{
+    position: absolute;
+    bottom: 30px;
+    margin-bottom: 0px;
+    background: #ffa100e0;
+    padding: 10px 50px;
+    font-size: 24px;
+    color: #000;
+    line-height: 34px;
+}
+
+
+/****************** Block-04 Code Ends ********/
+
+
+
+/****************** Block-05 Code Starts ******/
+
+.site-block-05-wrapper 
+{
+    /*border-top: 2px solid #EAEAEA;*/
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.yellow-btn
+{
+	background: #FFA100;
+	color: #fff;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	border-radius: 0px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-transform: uppercase;
+	font-family: Raleway-SemiBold;
+	font-variant: all-small-caps !important;
+}
+.yellow-btn:hover
+{
+	background: #000;
+	color: #FFA100;
+}
+
+/****************** Block-05 Code Ends ********/
+
+
+/****************** Block-06 Code Starts ********/
+
+.site-block-06-wrapper 
+{
+    margin-top: 80px;
+}
+.block-06-inner-wrapper 
+{
+    background: #FFBE2E;
+    border-top: 1px solid #ececec;
+    padding: 40px 0px;
+    margin-top: 120px;
+}
+.store-blk
+{
+	display: flex;
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+}
+.store-blk img 
+{
+    width: 170px;
+}
+.app-feature-phone 
+{
+    position: absolute;
+    top: -140px;
+    left: 140px;
+}
+
+/****************** Block-06 Code Ends ********/
+
+
+/************************************** Our Fleet Page Code Starts *********************/
+
+
+.site-inner-header {
+    background: #f3a328;
+    color: #fff;
+    padding: 40px 0px;
+}
+.site-inner-content 
+{
+    margin: 30px 0px;
+}
+.filter-col-right {
+	padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ececec;
+}
+.filter-col-right:last-child
+{
+	border-bottom: none;
+}
+.car-spec img 
+{
+    width: 18px;
+    margin-right: 5px;
+    margin-top: -3px;
+}
+.custom-img-pos {
+    position: absolute;
+    right: 0;
+    width: 280px;
+    top: -100px;
+}
+
+/************************************* Our Fleet Page Code Ends *************************/
+
+
+
+/************************************* Branches Page Code Starts ************************/
+
+.branches-col-left,.branches-col-right
+{
+	min-height: 300px;
+}
+.branches-col-left {
+    background: #f7f7f7;
+	padding: 25px;
+	height: 300px;
+}
+iframe 
+{
+    width: 100%;
+    min-height: 300px;
+}
+
+/************************************* Branches Page Code Ends ************************/
+
+
+
+/************************************* Jobs Page Code Starts **************************/
+
+.card {
+	border-radius: 0px;
+	border-left: 5px solid #f3a328;
+	margin-bottom: 20px;
+}
+.card-header {
+	background-color: #f7f7f7;
+	border-bottom: 1px solid #f7f7f7;
+	cursor: pointer;
+}
+.btn-link
+{
+	color: inherit!important;
+	font-feature-settings: 'pnum' on, 'lnum' on !important;;
+}
+.job-position,.title {
+    margin-left: 15px;
+}
+.jobs-desc-list {
+	list-style: square;
+	padding-left: 30px;
+}
+jobs-desc-list li:first-child
+{
+	list-style: none!important;
+}
+
+/************************************* Jobs Page Code Ends ****************************/
+
+
+/****************** Footer Code Starts *******/
+
+
+footer
+{
+	background: #000;
+	padding: 35px 0px 0px;
+	color:#fff;
+}
+.custom-fa-icon 
+{
+    font-size: 28px;
+    color: #fff;
+    opacity: 0.7;
+    margin-right: 20px;
+    transition: 0.5s ease all;
+}
+.custom-fa-icon:hover
+{
+	opacity: 1;
+}
+footer a
+{
+	color:inherit;
+}
+footer a:hover
+{
+	color:inherit;
+	text-decoration: underline!important;
+}
+.social-share a:hover
+{
+	text-decoration: none!important;
+}
+footer .p-title
+{
+	font-size: 16px;
+	text-transform: uppercase;
+	font-variant: all-small-caps !important;
+	text-decoration: underline;
+}
+footer .border-bottom
+{
+	border-color: #515151 !important; 
+}
+footer p 
+{
+    font-size: 13px;
+}
+.copyright-block 
+{
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+	font-variant: all-small-caps !important;
+}
+
+/****************** Footer Code Ends *********/
+
+
+
+
+
+
+/******************* Responsive Code ******************/
+
+@media screen and (max-width: 768px)
+{
+	/*.navbar-nav li span 
+	{
+	    visibility: hidden!important;
+	}*/
+	.navbar-light .navbar-nav .nav-link
+	{
+		text-align: left;
+		margin-bottom: 12px;
+	}
+	.navbar-nav li span 
+	{
+    	display: inherit;
+    }
+	.navbar-nav
+	{
+		margin-left: 0px!important;
+		padding-right: 0px;
+	}
+	.login-btn
+	{
+		margin-bottom: 10px;
+		display: inline-block;
+	}
+	.site-banner-wrapper
+	{
+		height: auto!important;
+		padding-bottom: 20px;
+	}
+	.immersive_slider .is-slide
+	{
+		padding: 35px!important;
+	}
+	.immersive_slider .is-slide .image 
+  {
+    float: none!important;
+    width: 100%!important;
+    display: block!important;
+    padding: 0 0 0 10px!important;
+  }
+  .immersive_slider .is-slide .content 
+  {
+    float: none!important;
+    width: 100%!important;
+    display: block!important;
+  }
+  .immersive_slider .is-slide .image img 
+  {
+    width: 330px!important;
+  }
+	#immersive_slider p
+	{
+		font-size: 12px;
+	}
+	.immersive_slider .is-slide .content h2 
+	{
+	    font-size: 20px!important;
+	    font-weight: 300;
+	    text-align: left;
+	    white-space: nowrap!important;
+	}
+	.banner-content 
+	{
+	    margin-top: 0px!important;
+	    margin-left: 0px!important;
+	    padding-top: 30px;
+	}
+	.banner-content h2 
+	{
+    	line-height: inherit!important;
+		font-size: 1rem!important;
+	    
+    }
+    .banner-btn 
+    {
+	    padding-left: 1rem;
+	    padding-right: 1rem;
+	    margin-top: 20px!important;
+	    margin-bottom: 20px;
+	    font-size: 12px!important;
+	}
+	.custom-column 
+	{
+    	border-right: none;
+	}
+	.white-title,.yellow-title 
+	{
+    	font-size: 1rem;
+	}
+	.store-blk 
+	{
+    	display: inline-flex;
+	}
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1199px)
+{
+
+	
+}

@@ -1,0 +1,1 @@
+return Carbon::parse($value)->isoFormat('[% date_format %]');

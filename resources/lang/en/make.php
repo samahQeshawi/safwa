@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'slno' => 'No',
+    'car_make' => 'Car Brand',
+    'car_make__placeholder' => 'Enter Car Brand here...',
+    'status' => 'Status',
+    'is_active' => 'Is Active',
+    'is_active_0' => 'No',
+    'is_active_1' => 'Yes',
+    'create' => 'Create New Car Brand',
+    'delete' => 'Delete Car Brand',
+    'edit' => 'Edit Car Brand',
+    'show' => 'Show Car Brand',
+    'show_all' => 'Show All Car Brand',
+    'add' => 'Add',
+    'update' => 'Update',
+    'confirm_delete' => 'Click Ok to delete Car Brand.',
+    'none_available' => 'No Car Brand Available.',
+    'model_plural' => 'Car Brand',
+    'model_was_added' => 'Car Brand was successfully added.',
+    'model_was_retrieved' => 'Car Brand was successfully retrieved.',
+    'models_were_retrieved' => 'Car Brand were successfully retrieved.',
+    'model_was_updated' => 'Car Brand was successfully updated.',
+    'model_was_deleted' => 'Car Brand was successfully deleted.',
+    'unexpected_error' => 'Unexpected error occurred while trying to process your request.',
+];
